@@ -554,12 +554,9 @@ a) Make different coloured points for each village**
 
 ```
 
-**Question 4b: Whatever plot you decided on for question 4a, you may have found that because the labels for the `LABOR` variable are quite long, the text along the axis became squashed. Look into the elements which can be customised within `theme` and try to make these labels fit better by decreasing the font size or modifying the angle at which the labels are aligned to the axis**
+**Question 4b: Whatever plot you decided on for question 4a, you may have found that because the labels for the `HHTYPE` variable are quite long, the text along the axis became squashed. Look into the elements which can be customised within `theme` and try to make these labels fit better by decreasing the font size or modifying the angle at which the labels are aligned to the axis**
 ```{r exc4b, exercise=TRUE}
 
-ggplot(data=BeanSurvey,aes(y=BEANSHARVESTED_LR,x=HHTYPE))+
-  geom_point()+
-    theme(axis.text.x = element_text(angle=15,size=8))
 
 
 ```
